@@ -1,0 +1,92 @@
+body {
+  background: rgb(197, 190, 190);
+  color: #111;
+  padding: 4em;
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+footer,
+header {
+  text-align: center;
+}
+footer {
+  background-color: #cecece;
+  padding: 1rem;
+}
+img.fiveday {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 3px;
+  width: 175px;
+  height: 175px;
+}
+img#today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 3px;
+}
+img#pictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 25%;
+}
+.nav {
+  margin: 0px;
+  text-decoration: none;
+}
+
+ul {
+  max-width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cecece;
+}
+
+li a,
+li p {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #048caa;
+}
+.article-title {
+  text-align: center;
+}
+article p,
+article h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+#today-text {
+  text-align: center;
+}
+.five-day-text {
+  text-align: center;
+}
