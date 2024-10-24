@@ -15,14 +15,6 @@ footer {
   padding: 1rem;
   border-radius: 10px;
 }
-img#image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 100px;
-}
 .today-text {
   display: flex;
   flex-direction: column;
