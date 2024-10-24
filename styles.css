@@ -4,6 +4,7 @@ body {
   padding: 4em;
   font-family: sans-serif;
   line-height: 1.15;
+  text-align: center;
 }
 footer,
 header {
@@ -12,39 +13,35 @@ header {
 footer {
   background-color: #cecece;
   padding: 1rem;
-}
-img.fiveday {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  border-radius: 3px;
-  width: 175px;
-  height: 175px;
-}
-img#today {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 250px;
-  height: 250px;
-  border-radius: 3px;
-}
-img#pictures {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
+}
+img#image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  max-width: 25%;
+  width: 100px;
+}
+.today-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.holder {
+  border: #cecece solid 5px;
+  border-radius: 10px;
+  background-color: #cecece;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 20px;
 }
 .nav {
   margin: 0px;
   text-decoration: none;
+  display: flex;
 }
 
 ul {
@@ -54,6 +51,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #cecece;
+  border-radius: 10px;
 }
 
 li a,
