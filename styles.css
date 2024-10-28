@@ -15,20 +15,14 @@ footer {
   padding: 1rem;
   border-radius: 10px;
 }
-.today-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .holder {
   border: #cecece solid 5px;
   border-radius: 10px;
   background-color: #cecece;
-  width: 100px;
-  height: 100px;
   padding: 0px;
   margin: 20px;
+  width: 100px;
+  height: 100px;
 }
 .nav {
   margin: 0px;
@@ -74,9 +68,40 @@ article h3 {
   align-items: center;
   margin: 1rem;
 }
-#today-text {
-  text-align: center;
+.pictures {
+  width: 300px;
+  border-radius: 10px;
 }
-.five-day-text {
-  text-align: center;
+
+.weather-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-box {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.news-text {
+  border: #cecece solid 5px;
+  border-radius: 10px;
+  background-color: #cecece;
+  padding: 10px;
+  margin: 20px;
+  width: 800px;
+  max-width: 90%;
+  text-align: left;
+}
+.news-img {
+  border: #cecece solid 5px;
+  border-radius: 10px;
+  background-color: #cecece;
+  padding: 5px;
+  margin: 20px;
+  width: 250px;
+}
+.hidden {
+  display: none;
 }

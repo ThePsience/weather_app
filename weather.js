@@ -1,20 +1,21 @@
-const URL = `https://api.openweathermap.org/data/2.5/weather?q=tooele&appid=f8759bf4ba10c2d60c2ddaa19d91aeb6&units=imperial`;
+// Weather Section
+const WeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=tooele&appid=f8759bf4ba10c2d60c2ddaa19d91aeb6&units=imperial`;
 
-fetch(URL)
+fetch(WeatherURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    let website = jsObject;
+    let WeatherWebsite = jsObject;
     console.log(jsObject);
 
     let today = document.createElement('section');
-    today.className = 'today-text';
+    today.className = 'weather-box';
 
     let city = document.createElement('h3');
-    city.textContent = website.name;
+    city.textContent = WeatherWebsite.name;
     today.appendChild(city);
 
     let weather = document.createElement('h2');
-    weather.textContent = website.weather[0].main;
+    weather.textContent = WeatherWebsite.weather[0].main;
     today.appendChild(weather);
 
     let holder = document.createElement('div');
@@ -23,28 +24,28 @@ fetch(URL)
 
     let img = document.createElement('img');
     img.classList.add('image');
-    const icon = website.weather[0].icon;
+    const icon = WeatherWebsite.weather[0].icon;
     img.src = 'https://openweathermap.org/img/wn/' + icon + '@2x.png';
     holder.appendChild(img);
 
     let temperature = document.createElement('p');
     temperature.textContent =
-      'The Tempature Currently is: ' + website.main.temp;
+      'The Tempature Currently is: ' + WeatherWebsite.main.temp;
     today.appendChild(temperature);
 
     let feels_like = document.createElement('p');
     feels_like.textContent =
-      'The Tempature Feels Like: ' + website.main.feels_like;
+      'The Tempature Feels Like: ' + WeatherWebsite.main.feels_like;
     today.appendChild(feels_like);
 
     let humidity = document.createElement('p');
     humidity.textContent =
-      'The Humidity Currently is: ' + website.main.humidity + '%';
+      'The Humidity Currently is: ' + WeatherWebsite.main.humidity + '%';
     today.appendChild(humidity);
 
     let windDirection = document.createElement('p');
-    let degrees = website.wind.deg;
-    let speed = website.wind.speed;
+    let degrees = WeatherWebsite.wind.deg;
+    let speed = WeatherWebsite.wind.speed;
     let direction;
 
     if (degrees >= 348.75 || degrees < 11.25) {
@@ -92,5 +93,5 @@ fetch(URL)
       'mph';
     today.appendChild(windDirection);
 
-    document.querySelector('div.today-text').appendChild(today);
+    document.querySelector('div.weather-box').appendChild(today);
   });
